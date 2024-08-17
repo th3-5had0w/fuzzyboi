@@ -1,0 +1,15 @@
+[package]
+name = "fuzzyboi"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+clap = { version = "4.5.16", features = ["derive", "string"] }
+libafl = "0.13.2"
+libafl_bolts = "0.13.2"
+libafl_derive = "0.13.2"
+libafl_qemu = { version = "0.13.2", features = ["injections"] }
+log = "0.4.22"
+nix = { version = "0.29.0", features = ["fs"] }
+readonly = "0.2.12"
+typed-builder = "0.19.1"
